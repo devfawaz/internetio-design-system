@@ -1,0 +1,32 @@
+{
+  "$description": "Accessibility policy. Every foreground/background pair in scripts/validate.mjs is measured against WCAG 2.2 (AA). A pair that fails must be listed here with a reason, or the test fails. status 'open' means a design decision is pending; 'accepted' means the exception is deliberate.",
+  "waivers": [
+    {
+      "fg": "color.text.on-action",
+      "bg": "color.action.primary",
+      "status": "accepted",
+      "reason": "Brand blue/600 is the brand colour for icons, borders and focus rings, where 3:1 is enough (3.98:1). It is not used behind text: text-bearing primary fills use color.action.primary-accessible (blue/650, 5.06:1), adopted in both products."
+    },
+    {
+      "fg": "color.border.default",
+      "bg": "color.surface.page",
+      "status": "accepted",
+      "reason": "Decorative dividers and card edges. Not needed to identify a control. Controls use color.border.input."
+    },
+    {
+      "fg": "color.border.strong",
+      "bg": "color.surface.page",
+      "status": "accepted",
+      "reason": "Secondary button outline. The button carries a text label, so the outline is not the only cue (WCAG 1.4.11)."
+    },
+    {
+      "fg": "color.m3.surface-container-high",
+      "bg": "color.surface.page",
+      "status": "accepted",
+      "reason": "The app's search bars are Material 3 filled containers with no outline, in both layouts. The fill is 1.2:1 against white, so the field is identified by its search icon and placeholder text, not its boundary. This is the Material 3 pattern; an outlined variant would use color.border.input."
+    }
+  ],
+  "exempt": [
+    "color.text.disabled"
+  ]
+}

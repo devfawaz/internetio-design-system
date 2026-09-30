@@ -1,0 +1,109 @@
+{
+  "$description": "Material 3 layer used by the Android-style mobile app (text fields, search bars, dialogs, snackbars). Where an internet.io token already gives the same role, the m3 token aliases it. Where it does not, the value is kept as a proposed platform colour instead of being forced onto the brand palette.",
+  "color": {
+    "$type": "color",
+    "m3": {
+      "primary": {
+        "$value": "{color.blue.600}",
+        "$description": "Was --md-primary: var(--blue-500), which is #2979ff and Figma's blue/600",
+        "$extensions": {
+          "iio": {}
+        }
+      },
+      "on-surface": {
+        "$value": "#1d1b20",
+        "$extensions": {
+          "iio": {
+            "status": "proposed",
+            "audit": "mobile --md-on-surface, used x8"
+          }
+        }
+      },
+      "on-surface-variant": {
+        "$value": "#49454f",
+        "$extensions": {
+          "iio": {
+            "status": "proposed",
+            "audit": "mobile --md-on-surface-variant, used x15"
+          }
+        }
+      },
+      "outline": {
+        "$value": "#79747e",
+        "$extensions": {
+          "iio": {
+            "status": "proposed",
+            "audit": "mobile --md-outline, used x7"
+          }
+        }
+      },
+      "outline-variant": {
+        "$value": "#cac4d0",
+        "$extensions": {
+          "iio": {
+            "status": "proposed",
+            "audit": "mobile --md-outline-variant, used x5"
+          }
+        }
+      },
+      "secondary-container": {
+        "$value": "#dbe6fb",
+        "$extensions": {
+          "iio": {
+            "status": "proposed",
+            "audit": "mobile --md-secondary-container, used x9"
+          }
+        }
+      },
+      "surface-container": {
+        "$value": "#f3f4f9",
+        "$extensions": {
+          "iio": {
+            "status": "proposed",
+            "audit": "mobile --md-surface-container, used x7"
+          }
+        }
+      },
+      "surface-container-high": {
+        "$value": "#eceef4",
+        "$extensions": {
+          "iio": {
+            "status": "proposed",
+            "audit": "mobile --md-surface-container-high, used x13"
+          }
+        }
+      },
+      "inverse-surface": {
+        "$value": "#322f35",
+        "$extensions": {
+          "iio": {
+            "status": "proposed",
+            "audit": "mobile --md-inverse-surface, used x2"
+          }
+        }
+      },
+      "inverse-on-surface": {
+        "$value": "#f5eff7",
+        "$extensions": {
+          "iio": {
+            "status": "proposed",
+            "audit": "mobile --md-inverse-on-surface, used x1"
+          }
+        }
+      },
+      "inverse-primary": {
+        "$value": "#adc6ff",
+        "$extensions": {
+          "iio": {
+            "status": "proposed",
+            "audit": "mobile --md-inverse-primary, used x1"
+          }
+        }
+      },
+      "error": {
+        "$value": "{color.red.650}",
+        "$description": "Material 3 error, now the brand error red/650. Was #b3261e (used x4)"
+      }
+    }
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "name": "internetio-design-system",
+  "version": "0.3.0",
+  "private": true,
+  "type": "module",
+  "description": "Design tokens for internet.io, built from Figma variables and an audit of the prototypes",
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "check": "node scripts/check.mjs",
+    "docs": "npx serve --no-clipboard -l 5400 ..",
+    "validate": "node scripts/validate.mjs",
+    "sync": "node scripts/sync.mjs",
+    "test": "npm run build && npm run validate && node scripts/check.mjs docs/docs.css --max 0 && node scripts/sync.mjs --check"
+  }
+}

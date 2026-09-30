@@ -1,0 +1,210 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <script>if (location.protocol !== "file:" && !/\/$|\.html$/.test(location.pathname)) location.replace(location.pathname + "/" + location.search + location.hash);</script>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>internet.io design system</title>
+  <meta name="description" content="Design tokens for internet.io: built from Figma variables and an audit of the prototypes, with a live editor.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../dist/tokens.css">
+  <link rel="stylesheet" href="docs.css">
+</head>
+<body>
+<div class="shell">
+  <nav class="nav" aria-label="Sections">
+    <div class="brand">internet<span>.io</span> DS</div>
+    <a href="#overview">Overview</a>
+    <div class="group">Foundations</div>
+    <a href="#color">Colour</a>
+    <a href="#type">Type</a>
+    <a href="#space">Space and size</a>
+    <a href="#radius">Radius</a>
+    <a href="#elevation">Elevation</a>
+    <a href="#motion">Motion</a>
+    <a href="#layers">Layers</a>
+    <div class="group">Build</div>
+    <a href="#components">Components</a>
+    <a href="#products">In the products</a>
+    <div class="group">Evidence</div>
+    <a href="#a11y">Accessibility</a>
+    <a href="#audit">Audit</a>
+  </nav>
+
+  <main class="main">
+    <section id="overview">
+      <div class="eyebrow">internet.io</div>
+      <h1>One source for every value in the product</h1>
+      <p class="lede">The Figma library defines its colours as variables; type, spacing and radius were not variables. The landing page and the app each carried their own values, and the two had drifted apart. These tokens close that gap: colours come from the library, the rest are derived from an audit of the code and recorded with the evidence.</p>
+      <div class="stats" id="stats"></div>
+      <div class="tiers">
+        <div class="tier"><h4>1. Primitive</h4><p>Raw values and scales, like <code>--color-blue-600</code>. Never used in component CSS.</p></div>
+        <div class="tier"><h4>2. Semantic</h4><p>What components use, like <code>--color-action-primary</code>. Keeps <code>var()</code> references, so changing a primitive changes everything built on it.</p></div>
+        <div class="tier"><h4>3. Component</h4><p>Specs like <code>--button-height</code>, including deliberate exceptions.</p></div>
+      </div>
+      <p class="note">Click any swatch or token name to copy its CSS variable. Use the playground on the right to change one value and see everything on this page, and both products further down, follow.</p>
+    </section>
+
+    <section id="color">
+      <div class="eyebrow">Foundations</div>
+      <h2>Colour</h2>
+      <p class="lede">36 colours come from the Figma file. A dot marks colours the code uses that Figma does not define yet.</p>
+      <h3>Primitives</h3>
+      <div id="primitives"></div>
+      <h3>Semantic roles</h3>
+      <p class="note">Components reference these. Each one points at a primitive, so a role can move to a different colour without touching component code.</p>
+      <div id="semantic"></div>
+      <h3>Material 3 layer (Android)</h3>
+      <div id="m3"></div>
+    </section>
+
+    <section id="type">
+      <div class="eyebrow">Foundations</div>
+      <h2>Type</h2>
+      <p class="lede">The code used 22 font sizes and 16 line heights. Twelve text styles replace them, each bundling size, line height, weight and tracking.</p>
+      <div id="styles"></div>
+      <h3>Size scale</h3>
+      <div id="sizes"></div>
+    </section>
+
+    <section id="space">
+      <div class="eyebrow">Foundations</div>
+      <h2>Space and size</h2>
+      <p class="lede">A 4px-based scale. Padding in the app had 133 distinct combinations; off-scale values snap to the nearest step, and each step records which values it absorbed (see the audit).</p>
+      <div id="spaces"></div>
+      <h3>Control sizes</h3>
+      <div class="boxes" id="controls"></div>
+    </section>
+
+    <section id="radius">
+      <div class="eyebrow">Foundations</div>
+      <h2>Radius</h2>
+      <p class="lede">29 distinct radii collapse to eight steps. Search bars and buttons that used 28, 32, 48 or 56px are all the pill radius.</p>
+      <div class="boxes" id="radii"></div>
+    </section>
+
+    <section id="elevation">
+      <div class="eyebrow">Foundations</div>
+      <h2>Elevation and focus</h2>
+      <div class="boxes" id="shadows"></div>
+      <h3>Interaction states</h3>
+      <p class="note">Opacities for hover, focus, pressed and disabled layers (Material 3 state layers, which the app already used).</p>
+      <div class="boxes" id="states"></div>
+    </section>
+
+    <section id="motion">
+      <div class="eyebrow">Foundations</div>
+      <h2>Motion</h2>
+      <p class="lede">Durations and easing curves. Pick a curve, then play each duration.</p>
+      <div class="row" id="eases" style="display:flex;gap:var(--space-2);margin-top:var(--space-4)"></div>
+      <div id="durations" style="margin-top:var(--space-4)"></div>
+    </section>
+
+    <section id="layers">
+      <div class="eyebrow">Foundations</div>
+      <h2>Layers and breakpoints</h2>
+      <div id="layersTable"></div>
+    </section>
+
+    <section id="components">
+      <div class="eyebrow">Build</div>
+      <h2>Components</h2>
+      <p class="lede">Built on this page from component tokens only. Change a token in the playground and these follow.</p>
+      <div class="cmp" style="margin-top:var(--space-6)">
+        <div class="cell">
+          <div class="cap">Button: <code>--button-*</code></div>
+          <div class="row"><button class="ds-btn primary">Sign up</button><button class="ds-btn secondary">Log in</button></div>
+          <button class="ds-btn primary block">Get started free</button>
+        </div>
+        <div class="cell">
+          <div class="cap">Search bar: <code>--searchbar-*</code></div>
+          <label class="ds-search"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true" style="color:var(--color-text-muted);flex:none"><circle cx="7" cy="7" r="4.5"/><path d="M10.5 10.5 14 14" stroke-linecap="round"/></svg><input type="search" placeholder="What do you want to know?" aria-label="Search"></label>
+        </div>
+        <div class="cell">
+          <div class="cap">Card: <code>--card-*</code></div>
+          <div class="ds-card"><h4>Ask once</h4><p>Compare answers from seven AI models on one screen.</p></div>
+        </div>
+        <div class="cell">
+          <div class="cap">Chip, icon button, avatar</div>
+          <div class="row"><span class="ds-chip">OpenAI</span><span class="ds-chip">Gemini</span></div>
+          <div class="row">
+            <button class="ds-icon sm" aria-label="Small icon button">★</button>
+            <button class="ds-icon md" aria-label="Medium icon button">★</button>
+            <button class="ds-icon lg" aria-label="Large icon button">★</button>
+            <span class="ds-avatar sm">FM</span><span class="ds-avatar">FM</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="products">
+      <div class="eyebrow">Build</div>
+      <h2>In the products</h2>
+      <p class="lede">The landing page and the app both load the same tokens. The playground changes them live, in both. Only values already on a token respond; the few hundred hardcoded values that remain are why some things stay put.</p>
+      <div class="previews" style="margin-top:var(--space-6)">
+        <div class="pv"><div class="frame" id="frameWeb" data-w="1280" data-h="800"><div class="fail" id="failWeb" hidden></div></div><div class="cap">Landing page</div></div>
+        <div class="pv"><div class="frame" id="frameApp" data-w="410" data-h="820"><div class="fail" id="failApp" hidden></div></div><div class="cap">App, mobile layout</div></div>
+      </div>
+      <p class="note" id="previewNote"></p>
+    </section>
+
+    <section id="a11y">
+      <div class="eyebrow">Evidence</div>
+      <h2>Accessibility</h2>
+      <p class="lede">Every text and control colour pair is measured against WCAG 2.2 AA on each build. A failing pair must be declared with a reason, or the test fails. Text needs 4.5:1 and control boundaries need 3:1.</p>
+      <div class="stats" id="a11yStats" style="margin-top:var(--space-6)"></div>
+      <div class="row" id="a11yFilters" style="display:flex;gap:var(--space-2);margin:var(--space-6) 0 var(--space-4);flex-wrap:wrap"></div>
+      <div id="a11yTable"></div>
+      <h3>Open decision</h3>
+      <div id="a11yOpen"></div>
+    </section>
+
+    <section id="audit">
+      <div class="eyebrow">Evidence</div>
+      <h2>Where the proposed tokens came from</h2>
+      <p class="lede">Every proposed token records what the audit found: how often the code used it, and which off-scale values it absorbed. Filter by kind.</p>
+      <div class="row" id="auditFilters" style="display:flex;gap:var(--space-2);margin:var(--space-4) 0;flex-wrap:wrap"></div>
+      <div id="auditTable"></div>
+    </section>
+  </main>
+
+  <aside class="play" aria-label="Playground">
+    <div>
+      <h3>Playground</h3>
+      <p class="lede">Change one value. Everything that uses the token follows, here and in both products.</p>
+    </div>
+    <div class="ctl">
+      <label for="cBrand">Brand blue <output id="oBrand">#2979ff</output></label>
+      <input type="color" id="cBrand" value="#2979ff">
+      <small>Regenerates the whole blue ramp from one colour.</small>
+    </div>
+    <div class="ctl">
+      <label for="cRadius">Corner radius <output id="oRadius">1.0×</output></label>
+      <input type="range" id="cRadius" min="0" max="2" step="0.1" value="1">
+      <small>Scales the radius steps. Pills stay round.</small>
+    </div>
+    <div class="ctl">
+      <label for="cType">Type size <output id="oType">1.00×</output></label>
+      <input type="range" id="cType" min="0.85" max="1.25" step="0.05" value="1">
+      <small>Scales the size scale.</small>
+    </div>
+    <div class="ctl">
+      <label for="cSpace">Spacing <output id="oSpace">1.00×</output></label>
+      <input type="range" id="cSpace" min="0.5" max="1.5" step="0.05" value="1">
+      <small>Scales the space steps.</small>
+    </div>
+    <div class="actions">
+      <button class="ds-btn secondary" id="bReset" style="height:var(--size-control-sm)">Reset</button>
+      <button class="ds-btn primary" id="bCopy" style="height:var(--size-control-sm)">Copy CSS</button>
+    </div>
+    <pre id="overrides" aria-live="polite">No overrides</pre>
+  </aside>
+</div>
+<div class="toast" id="toast" role="status"></div>
+<script src="tokens.data.js"></script>
+<script src="a11y.data.js"></script>
+<script src="docs.js"></script>
+</body>
+</html>

@@ -1,0 +1,431 @@
+{
+  "$description": "Primitive colours. Source: Figma file 'Design System - internet.io' (pkuPFyqar9LlYNtnkW2bHR), collection 'Primary', read 2026-09-29. Tokens marked status=proposed are values the code uses that Figma does not define yet.",
+  "color": {
+    "$type": "color",
+    "white": {
+      "$value": "#ffffff",
+      "$extensions": {
+        "iio": {
+          "status": "figma",
+          "figma": "base/white"
+        }
+      }
+    },
+    "black": {
+      "$value": "#000000",
+      "$extensions": {
+        "iio": {
+          "status": "figma",
+          "figma": "base/black"
+        }
+      }
+    },
+    "blue": {
+      "25": {
+        "$value": "#f0faff",
+        "$extensions": {
+          "iio": {
+            "status": "proposed",
+            "note": "Landing page chip gradient start; not in Figma"
+          }
+        }
+      },
+      "50": {
+        "$value": "#fbfcff",
+        "$extensions": {
+          "iio": {
+            "status": "figma",
+            "figma": "blue/50"
+          }
+        }
+      },
+      "75": {
+        "$value": "#eaf2ff",
+        "$extensions": {
+          "iio": {
+            "status": "figma",
+            "figma": "blue/75"
+          }
+        }
+      },
+      "100": {
+        "$value": "#d4e4ff",
+        "$extensions": {
+          "iio": {
+            "status": "figma",
+            "figma": "blue/100"
+          }
+        }
+      },
+      "200": {
+        "$value": "#b8d2ff",
+        "$extensions": {
+          "iio": {
+            "status": "figma",
+            "figma": "blue/200"
+          }
+        }
+      },
+      "300": {
+        "$value": "#94bcff",
+        "$extensions": {
+          "iio": {
+            "status": "figma",
+            "figma": "blue/300"
+          }
+        }
+      },
+      "400": {
+        "$value": "#70a6ff",
+        "$extensions": {
+          "iio": {
+            "status": "figma",
+            "figma": "blue/400"
+          }
+        }
+      },
+      "500": {
+        "$value": "#4d8fff",
+        "$extensions": {
+          "iio": {
+            "status": "figma",
+            "figma": "blue/500"
+          }
+        }
+      },
+      "600": {
+        "$value": "#2979ff",
+        "$extensions": {
+          "iio": {
+            "status": "figma",
+            "figma": "blue/600",
+            "note": "Brand blue"
+          }
+        }
+      },
+      "650": {
+        "$value": "#1565f0",
+        "$extensions": {
+          "iio": {
+            "status": "proposed",
+            "note": "Button hover. Web used #1565f0, mobile #1f6ef0 and #1c64dc; unified to one value"
+          }
+        }
+      },
+      "700": {
+        "$value": "#1b51aa",
+        "$extensions": {
+          "iio": {
+            "status": "figma",
+            "figma": "blue/700"
+          }
+        }
+      },
+      "800": {
+        "$value": "#153d80",
+        "$extensions": {
+          "iio": {
+            "status": "figma",
+            "figma": "blue/800"
+          }
+        }
+      },
+      "900": {
+        "$value": "#0e2855",
+        "$extensions": {
+          "iio": {
+            "status": "figma",
+            "figma": "blue/900",
+            "note": "Logo navy"
+          }
+        }
+      },
+      "1000": {
+        "$value": "#081833",
+        "$extensions": {
+          "iio": {
+            "status": "figma",
+            "figma": "blue/1000"
+          }
+        }
+      }
+    },
+    "neutral": {
+      "50": {
+        "$value": "#f8f8f8",
+        "$extensions": {
+          "iio": {
+            "status": "proposed",
+            "note": "Mobile row hover and prose background; not in Figma"
+          }
+        }
+      },
+      "75": {
+        "$value": "#f5f5f5",
+        "$extensions": {
+          "iio": {
+            "status": "figma",
+            "figma": "neutral/75"
+          }
+        }
+      },
+      "100": {
+        "$value": "#f1f1f1",
+        "$extensions": {
+          "iio": {
+            "status": "figma",
+            "figma": "neutral/100"
+          }
+        }
+      },
+      "200": {
+        "$value": "#e7e7e7",
+        "$extensions": {
+          "iio": {
+            "status": "figma",
+            "figma": "neutral/200"
+          }
+        }
+      },
+      "300": {
+        "$value": "#dcdcdc",
+        "$extensions": {
+          "iio": {
+            "status": "figma",
+            "figma": "neutral/300"
+          }
+        }
+      },
+      "330": {
+        "$value": "rgba(220, 220, 220, 0.3)",
+        "$extensions": {
+          "iio": {
+            "status": "figma",
+            "figma": "neutral/330"
+          }
+        }
+      },
+      "400": {
+        "$value": "#d0d0d0",
+        "$extensions": {
+          "iio": {
+            "status": "figma",
+            "figma": "neutral/400"
+          }
+        }
+      },
+      "500": {
+        "$value": "#c4c4c4",
+        "$extensions": {
+          "iio": {
+            "status": "figma",
+            "figma": "neutral/500"
+          }
+        }
+      },
+      "600": {
+        "$value": "#b8b8b8",
+        "$extensions": {
+          "iio": {
+            "status": "figma",
+            "figma": "neutral/600"
+          }
+        }
+      },
+      "650": {
+        "$value": "#6b6b6b",
+        "$extensions": {
+          "iio": {
+            "status": "proposed",
+            "note": "Mobile secondary text (was grey-500); sits between neutral/700 and neutral/800 in contrast; not in Figma"
+          }
+        }
+      },
+      "700": {
+        "$value": "#7b7b7b",
+        "$extensions": {
+          "iio": {
+            "status": "figma",
+            "figma": "neutral/700"
+          }
+        }
+      },
+      "800": {
+        "$value": "#5c5c5c",
+        "$extensions": {
+          "iio": {
+            "status": "figma",
+            "figma": "neutral/800"
+          }
+        }
+      },
+      "900": {
+        "$value": "#3d3d3d",
+        "$extensions": {
+          "iio": {
+            "status": "figma",
+            "figma": "neutral/900"
+          }
+        }
+      },
+      "1000": {
+        "$value": "#111111",
+        "$extensions": {
+          "iio": {
+            "status": "figma",
+            "figma": "neutral/1000"
+          }
+        }
+      }
+    },
+    "red": {
+      "100": {
+        "$value": "#fad7d7",
+        "$extensions": {
+          "iio": {
+            "status": "figma",
+            "figma": "red/100"
+          }
+        }
+      },
+      "200": {
+        "$value": "#f6bdbc",
+        "$extensions": {
+          "iio": {
+            "status": "figma",
+            "figma": "red/200"
+          }
+        }
+      },
+      "300": {
+        "$value": "#f29c9a",
+        "$extensions": {
+          "iio": {
+            "status": "figma",
+            "figma": "red/300"
+          }
+        }
+      },
+      "400": {
+        "$value": "#ee7b78",
+        "$extensions": {
+          "iio": {
+            "status": "figma",
+            "figma": "red/400"
+          }
+        }
+      },
+      "500": {
+        "$value": "#e95a57",
+        "$extensions": {
+          "iio": {
+            "status": "figma",
+            "figma": "red/500"
+          }
+        }
+      },
+      "600": {
+        "$value": "#e53935",
+        "$extensions": {
+          "iio": {
+            "status": "figma",
+            "figma": "red/600"
+          }
+        }
+      },
+      "650": {
+        "$value": "#c5221f",
+        "$extensions": {
+          "iio": {
+            "status": "proposed",
+            "note": "AA-safe red for text and filled buttons (white on it is 5.8:1). The app already used #c5221f as its danger hover. Same role as blue/650",
+            "audit": "app danger hover x1; replaces #d93025 (x2) and Material 3 #b3261e (x4)",
+            "consolidates": [
+              "#d93025",
+              "#b3261e",
+              "#c5221f"
+            ]
+          }
+        }
+      },
+      "700": {
+        "$value": "#992623",
+        "$extensions": {
+          "iio": {
+            "status": "figma",
+            "figma": "red/700"
+          }
+        }
+      },
+      "800": {
+        "$value": "#731d1b",
+        "$extensions": {
+          "iio": {
+            "status": "figma",
+            "figma": "red/800"
+          }
+        }
+      },
+      "900": {
+        "$value": "#4c1312",
+        "$extensions": {
+          "iio": {
+            "status": "figma",
+            "figma": "red/900"
+          }
+        }
+      },
+      "1000": {
+        "$value": "#2e0b0b",
+        "$extensions": {
+          "iio": {
+            "status": "figma",
+            "figma": "red/1000"
+          }
+        }
+      }
+    },
+    "cyan": {
+      "300": {
+        "$value": "#8fe6ff",
+        "$extensions": {
+          "iio": {
+            "status": "proposed",
+            "note": "Landing page search-bar spark; not in Figma"
+          }
+        }
+      },
+      "400": {
+        "$value": "#32c6fe",
+        "$extensions": {
+          "iio": {
+            "status": "proposed",
+            "note": "Landing page search glow; not in Figma"
+          }
+        }
+      }
+    },
+    "sky": {
+      "400": {
+        "$value": "#4fabfd",
+        "$extensions": {
+          "iio": {
+            "status": "proposed",
+            "note": "Landing page headline shimmer; not in Figma"
+          }
+        }
+      }
+    },
+    "orange": {
+      "600": {
+        "$value": "#ff6154",
+        "$extensions": {
+          "iio": {
+            "status": "proposed",
+            "note": "Product Hunt badge; third-party brand colour"
+          }
+        }
+      }
+    }
+  }
+}

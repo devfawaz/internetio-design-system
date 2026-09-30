@@ -1,0 +1,176 @@
+{
+  "$description": "Semantic colour roles. These are what components should use; primitives are never referenced from component CSS. Light theme only for now (Figma has a single mode).",
+  "color": {
+    "$type": "color",
+    "text": {
+      "primary": {
+        "$value": "{color.neutral.1000}",
+        "$description": "Headings, input text, strongest emphasis"
+      },
+      "body": {
+        "$value": "{color.neutral.900}",
+        "$description": "Default running text"
+      },
+      "secondary": {
+        "$value": "{color.neutral.800}",
+        "$description": "Supporting copy, nav links"
+      },
+      "muted": {
+        "$value": "{color.neutral.650}",
+        "$description": "Placeholders, captions, meta text. Was neutral/700 (4.2:1 on white); neutral/650 passes AA (5.3:1)"
+      },
+      "disabled": {
+        "$value": "{color.neutral.600}"
+      },
+      "on-action": {
+        "$value": "{color.white}"
+      },
+      "link": {
+        "$value": "{color.blue.700}",
+        "$description": "Links. blue/600 is 4.0:1 on white and fails AA; blue/650 fails on grey and pale-blue surfaces; blue/700 passes on every surface (6.6:1 or better)",
+        "$extensions": {
+          "iio": {
+            "status": "proposed",
+            "note": "Accessibility remedy. The products still use blue/600 for links"
+          }
+        }
+      },
+      "brand": {
+        "$value": "{color.blue.700}",
+        "$description": "Emphasised brand text, e.g. top result title, avatar"
+      },
+      "danger": {
+        "$value": "{color.red.650}",
+        "$description": "Error and destructive text on white and grey surfaces (5.3:1 or better)"
+      },
+      "danger-on-tint": {
+        "$value": "{color.red.700}",
+        "$description": "Error text on the pale red tint (surface/danger). red/650 is 4.35:1 there, red/700 is 5.9:1"
+      }
+    },
+    "surface": {
+      "page": {
+        "$value": "{color.white}"
+      },
+      "card": {
+        "$value": "{color.neutral.75}",
+        "$description": "Cards, chips, pagers"
+      },
+      "sunken": {
+        "$value": "{color.neutral.100}",
+        "$description": "Skeletons, badges, large icon buttons"
+      },
+      "hover": {
+        "$value": "{color.neutral.50}",
+        "$description": "Row and secondary-button hover; prose background"
+      },
+      "brand-wash": {
+        "$value": "{color.blue.75}",
+        "$description": "Page background behind the mobile device frame"
+      },
+      "brand-subtle": {
+        "$value": "{color.blue.50}"
+      },
+      "danger": {
+        "$value": "{color.red.100}"
+      },
+      "overlay": {
+        "$value": "rgba(0, 0, 0, 0.32)",
+        "$description": "Modal scrim"
+      },
+      "chip-from": {
+        "$value": "{color.blue.25}"
+      },
+      "chip-to": {
+        "$value": "{color.blue.100}"
+      }
+    },
+    "border": {
+      "default": {
+        "$value": "{color.neutral.300}"
+      },
+      "strong": {
+        "$value": "{color.neutral.600}",
+        "$description": "Secondary button and input outlines"
+      },
+      "subtle": {
+        "$value": "{color.neutral.330}",
+        "$description": "Dividers"
+      },
+      "brand": {
+        "$value": "{color.blue.100}",
+        "$description": "Chip borders (web used #d1e4ff, snapped to blue/100)"
+      },
+      "focus": {
+        "$value": "{color.blue.600}"
+      },
+      "danger": {
+        "$value": "{color.red.600}"
+      },
+      "input": {
+        "$value": "{color.neutral.700}",
+        "$description": "Input and search bar outlines. Needs 3:1 against the page (WCAG 1.4.11); border/default is 1.4:1",
+        "$extensions": {
+          "iio": {
+            "status": "proposed",
+            "note": "For outlined fields. The app's search bars and text fields use the Material 3 layer (filled search bar, m3 outline on text fields), so no product uses this yet"
+          }
+        }
+      }
+    },
+    "action": {
+      "primary": {
+        "$value": "{color.blue.600}"
+      },
+      "primary-hover": {
+        "$value": "{color.blue.650}"
+      },
+      "primary-pressed": {
+        "$value": "{color.blue.700}"
+      },
+      "danger": {
+        "$value": "{color.red.650}",
+        "$description": "Destructive fill with white text: 5.8:1"
+      },
+      "primary-accessible": {
+        "$value": "{color.blue.650}",
+        "$description": "Fill for primary buttons that carry text: white on blue/650 is 5.1:1, on blue/600 it is 4.0:1",
+        "$extensions": {
+          "iio": {
+            "status": "proposed",
+            "note": "Adopted in both products (2026-09-29). Text-bearing primary fills use this; brand blue/600 stays for icons, borders and focus"
+          }
+        }
+      },
+      "danger-hover": {
+        "$value": "{color.red.700}",
+        "$description": "Destructive fill on hover: 7.9:1"
+      }
+    },
+    "feedback": {
+      "danger": {
+        "$value": "{color.red.600}"
+      },
+      "brand": {
+        "$value": "{color.blue.600}"
+      }
+    },
+    "effect": {
+      "glow": {
+        "$value": "{color.cyan.400}",
+        "$description": "Search bar light and glow"
+      },
+      "glow-highlight": {
+        "$value": "{color.cyan.300}"
+      },
+      "shimmer": {
+        "$value": "{color.sky.400}",
+        "$description": "Headline shimmer sweep"
+      },
+      "third-party-ph": {
+        "$value": "{color.orange.600}",
+        "$description": "Product Hunt brand colour; not an internet.io colour"
+      }
+    }
+  }
+}

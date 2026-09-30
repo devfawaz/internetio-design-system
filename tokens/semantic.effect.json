@@ -1,0 +1,33 @@
+{
+  "$description": "Elevation, focus and interaction-state tokens. The audit found 26 distinct mobile shadows and 6 on web; these replace the repeated ones. State opacities follow the Material 3 state-layer values the mobile app already used with rgba(29, 27, 32, x).",
+  "shadow": {
+    "$type": "shadow",
+    "up-sm":   { "$value": "0 -2px 4px 0 rgba(184, 184, 184, 0.24)", "$description": "Mobile bottom docks (pager)", "$extensions": { "iio": { "status": "proposed", "audit": "mobile --shadow-up x3" } } },
+    "up-md":   { "$value": "0 -8px 16px 0 rgba(196, 196, 196, 0.25)", "$description": "Web feature cards", "$extensions": { "iio": { "status": "proposed", "audit": "web --shadow-up x2" } } },
+    "hero":    { "$value": "0 2px 5px 0 rgba(41, 121, 255, 0.1), 0 9px 9px 0 rgba(41, 121, 255, 0.09), 0 21px 13px 0 rgba(41, 121, 255, 0.05), 0 38px 15px 0 rgba(41, 121, 255, 0.01), 0 59px 17px 0 rgba(41, 121, 255, 0)", "$description": "Brand-blue glow under the hero search and primary button hover", "$extensions": { "iio": { "status": "proposed", "audit": "web --shadow-hero x3" } } },
+    "popover": { "$value": "0 2px 5px rgba(0, 31, 82, 0.07), 0 12px 32px rgba(0, 31, 82, 0.12)", "$description": "Menus and popovers", "$extensions": { "iio": { "status": "proposed", "audit": "mobile x4" } } },
+    "header":  { "$value": "0 1px 0 rgba(17, 17, 17, 0.06), 0 8px 24px rgba(17, 17, 17, 0.04)", "$description": "Web header once the page scrolls", "$extensions": { "iio": { "status": "proposed", "audit": "web x1" } } },
+    "menu":    { "$value": "0 12px 24px rgba(17, 17, 17, 0.08)", "$description": "Web hamburger menu", "$extensions": { "iio": { "status": "proposed", "audit": "web x1; near-duplicate of popover, review" } } },
+    "device":  { "$value": "0 24px 48px rgba(8, 24, 51, 0.12), 0 0 0 1px rgba(8, 24, 51, 0.06)", "$description": "Phone frame on desktop, presentation only", "$extensions": { "iio": { "status": "proposed" } } },
+    "m3-2":    { "$value": "0 2px 6px 2px rgba(0, 0, 0, 0.15), 0 1px 2px rgba(0, 0, 0, 0.3)", "$description": "Material 3 elevation level 2 (mobile dialogs and menus)", "$extensions": { "iio": { "status": "proposed", "audit": "mobile x3" } } },
+    "m3-3":    { "$value": "0 4px 8px 3px rgba(0, 0, 0, 0.15), 0 1px 3px rgba(0, 0, 0, 0.3)", "$description": "Material 3 elevation level 3 (mobile sheets)", "$extensions": { "iio": { "status": "proposed", "audit": "mobile x3" } } }
+  },
+  "focus": {
+    "ring-color":  { "$value": "{color.border.focus}", "$type": "color" },
+    "ring-width":  { "$value": "2px", "$type": "dimension", "$description": "Keyboard focus outline" },
+    "ring-offset": { "$value": "2px", "$type": "dimension", "$description": "Web used 3px, mobile 2px; unified" },
+    "halo":        { "$value": "0 0 0 4px rgba(41, 121, 255, 0.12)", "$type": "shadow", "$description": "Soft halo on focused search" }
+  },
+  "state": {
+    "$type": "number",
+    "hover":    { "$value": 0.08 },
+    "focus":    { "$value": 0.12 },
+    "pressed":  { "$value": 0.12 },
+    "disabled": { "$value": 0.38 }
+  },
+  "motion": {
+    "hover":  { "duration": { "$value": "{duration.fast}", "$type": "duration" }, "easing": { "$value": "ease-out", "$type": "cubicBezier" } },
+    "enter":  { "duration": { "$value": "{duration.slower}", "$type": "duration" }, "easing": { "$value": "{ease.standard}", "$type": "cubicBezier" } },
+    "sheet":  { "duration": { "$value": "{duration.slow}", "$type": "duration" }, "easing": { "$value": "{ease.emphasized}", "$type": "cubicBezier" } }
+  }
+}

@@ -1,0 +1,179 @@
+{
+  "$description": "Component tokens. These reference semantic and scale tokens. A value written here as a literal (button padding-x, 22px) is a component-specific exception: it exists in both prototypes and is not meant to become a general scale step.",
+  "button": {
+    "height": {
+      "$value": "{size.control.md}",
+      "$type": "dimension"
+    },
+    "height-block": {
+      "$value": "{size.control.lg}",
+      "$type": "dimension"
+    },
+    "padding-x": {
+      "$value": "22px",
+      "$type": "dimension",
+      "$description": "Exception: identical on web and mobile"
+    },
+    "radius": {
+      "$value": "{radius.pill}",
+      "$type": "dimension"
+    },
+    "gap": {
+      "$value": "{size.space.1}",
+      "$type": "dimension"
+    },
+    "primary": {
+      "background": {
+        "$value": "{color.action.primary-accessible}",
+        "$type": "color"
+      },
+      "background-hover": {
+        "$value": "{color.action.primary-pressed}",
+        "$type": "color"
+      },
+      "text": {
+        "$value": "{color.text.on-action}",
+        "$type": "color"
+      }
+    },
+    "secondary": {
+      "background": {
+        "$value": "{color.surface.page}",
+        "$type": "color"
+      },
+      "background-hover": {
+        "$value": "{color.surface.hover}",
+        "$type": "color"
+      },
+      "text": {
+        "$value": "{color.text.primary}",
+        "$type": "color"
+      },
+      "border": {
+        "$value": "{color.border.strong}",
+        "$type": "color"
+      }
+    }
+  },
+  "icon-button": {
+    "size-sm": {
+      "$value": "{size.control.sm}",
+      "$type": "dimension"
+    },
+    "size-md": {
+      "$value": "{size.control.md}",
+      "$type": "dimension"
+    },
+    "size-lg": {
+      "$value": "{size.control.lg}",
+      "$type": "dimension"
+    },
+    "radius": {
+      "$value": "{radius.circle}",
+      "$type": "dimension"
+    },
+    "color": {
+      "$value": "{color.text.muted}",
+      "$type": "color"
+    },
+    "background-hover": {
+      "$value": "{color.surface.card}",
+      "$type": "color"
+    }
+  },
+  "searchbar": {
+    "height": {
+      "$value": "{size.control.md}",
+      "$type": "dimension"
+    },
+    "height-lg": {
+      "$value": "{size.control.lg}",
+      "$type": "dimension"
+    },
+    "radius": {
+      "$value": "{radius.pill}",
+      "$type": "dimension"
+    },
+    "border": {
+      "$value": "{color.border.input}",
+      "$type": "color"
+    },
+    "border-focus": {
+      "$value": "{color.border.focus}",
+      "$type": "color"
+    },
+    "placeholder": {
+      "$value": "{color.text.muted}",
+      "$type": "color"
+    }
+  },
+  "card": {
+    "background": {
+      "$value": "{color.surface.card}",
+      "$type": "color"
+    },
+    "radius": {
+      "$value": "{radius.xl}",
+      "$type": "dimension"
+    },
+    "padding": {
+      "$value": "{size.space.8}",
+      "$type": "dimension",
+      "$description": "Web 32px; mobile cards use padding-compact"
+    },
+    "padding-compact": {
+      "$value": "{size.space.6}",
+      "$type": "dimension"
+    }
+  },
+  "chip": {
+    "radius": {
+      "$value": "{radius.sm}",
+      "$type": "dimension"
+    },
+    "border": {
+      "$value": "{color.border.brand}",
+      "$type": "color"
+    },
+    "background-from": {
+      "$value": "{color.surface.chip-from}",
+      "$type": "color"
+    },
+    "background-to": {
+      "$value": "{color.surface.chip-to}",
+      "$type": "color"
+    }
+  },
+  "sheet": {
+    "radius-top": {
+      "$value": "{radius.xl}",
+      "$type": "dimension"
+    },
+    "background": {
+      "$value": "{color.surface.page}",
+      "$type": "color"
+    },
+    "shadow": {
+      "$value": "{shadow.m3-3}",
+      "$type": "shadow"
+    }
+  },
+  "avatar": {
+    "size": {
+      "$value": "{size.control.md}",
+      "$type": "dimension"
+    },
+    "size-sm": {
+      "$value": "{size.control.sm}",
+      "$type": "dimension"
+    },
+    "background": {
+      "$value": "{color.text.brand}",
+      "$type": "color"
+    },
+    "text": {
+      "$value": "{color.text.on-action}",
+      "$type": "color"
+    }
+  }
+}

@@ -1,0 +1,92 @@
+{
+  "$description": "Primitive scales for type, space, radius, elevation and motion. None of these exist as Figma variables yet, so every token here is status=proposed and is derived from an audit of the landing page and mobile app on GitHub main (2026-09-29). 'consolidates' lists the off-scale values that snap to each step.",
+  "font": {
+    "family": {
+      "$type": "fontFamily",
+      "sans":   { "$value": "\"Inter\", system-ui, -apple-system, \"Segoe UI\", sans-serif", "$extensions": { "iio": { "status": "proposed" } } },
+      "system": { "$value": "\"Roboto\", \"Inter\", system-ui, sans-serif", "$extensions": { "iio": { "status": "proposed", "note": "Android status bar and testimonial attribution" } } }
+    },
+    "weight": {
+      "$type": "fontWeight",
+      "regular":  { "$value": 400, "$extensions": { "iio": { "status": "proposed" } } },
+      "medium":   { "$value": 500, "$extensions": { "iio": { "status": "proposed" } } },
+      "semibold": { "$value": 600, "$extensions": { "iio": { "status": "proposed", "consolidates": ["700 (4 uses on mobile, 1 on web)"] } } }
+    }
+  },
+  "size": {
+    "$type": "dimension",
+    "font": {
+      "2xs": { "$value": "10px", "$extensions": { "iio": { "status": "proposed", "audit": "mobile 9, web 1" } } },
+      "xs":  { "$value": "12px", "$extensions": { "iio": { "status": "proposed", "audit": "mobile 52, web 4", "consolidates": ["13px (5)"] } } },
+      "sm":  { "$value": "14px", "$extensions": { "iio": { "status": "proposed", "audit": "mobile 70, web 8" } } },
+      "md":  { "$value": "16px", "$extensions": { "iio": { "status": "proposed", "audit": "mobile 39, web 12" } } },
+      "lg":  { "$value": "18px", "$extensions": { "iio": { "status": "proposed", "audit": "mobile 25, web 1", "consolidates": ["19px (1)"] } } },
+      "xl":  { "$value": "20px", "$extensions": { "iio": { "status": "proposed", "audit": "mobile 22, web 6" } } },
+      "2xl": { "$value": "24px", "$extensions": { "iio": { "status": "proposed", "audit": "mobile 13, web 2", "consolidates": ["22px (5)", "26px (1)"] } } },
+      "3xl": { "$value": "32px", "$extensions": { "iio": { "status": "proposed", "audit": "mobile 2", "consolidates": ["30px (1)"] } } },
+      "4xl": { "$value": "40px", "$extensions": { "iio": { "status": "proposed", "audit": "web 2", "consolidates": ["36px (1, web mobile hero: review)"] } } },
+      "5xl": { "$value": "56px", "$extensions": { "iio": { "status": "proposed", "audit": "web 1 (tablet hero)" } } },
+      "6xl": { "$value": "72px", "$extensions": { "iio": { "status": "proposed", "audit": "web 1 (desktop hero)" } } }
+    },
+    "space": {
+      "0":   { "$value": "0px",  "$extensions": { "iio": { "status": "proposed" } } },
+      "0.5": { "$value": "2px",  "$extensions": { "iio": { "status": "proposed", "audit": "gap 2px x10 mobile" } } },
+      "1":   { "$value": "4px",  "$extensions": { "iio": { "status": "proposed", "audit": "gap 4px x29 mobile, x4 web", "consolidates": ["6px (4)"] } } },
+      "2":   { "$value": "8px",  "$extensions": { "iio": { "status": "proposed", "audit": "gap 8px x41 mobile", "consolidates": ["9px", "10px (8)"] } } },
+      "3":   { "$value": "12px", "$extensions": { "iio": { "status": "proposed", "audit": "gap 12px x32 mobile" } } },
+      "4":   { "$value": "16px", "$extensions": { "iio": { "status": "proposed", "audit": "gap 16px x22 mobile" } } },
+      "5":   { "$value": "20px", "$extensions": { "iio": { "status": "proposed", "audit": "gap 20px x4 (kept: header offsets)" } } },
+      "6":   { "$value": "24px", "$extensions": { "iio": { "status": "proposed", "audit": "gap 24px x7 mobile, x8 web" } } },
+      "8":   { "$value": "32px", "$extensions": { "iio": { "status": "proposed", "audit": "web card padding", "consolidates": ["36px (2)"] } } },
+      "12":  { "$value": "48px", "$extensions": { "iio": { "status": "proposed", "audit": "web section gaps x5" } } },
+      "16":  { "$value": "64px", "$extensions": { "iio": { "status": "proposed", "consolidates": ["72px (1)"] } } },
+      "24":  { "$value": "96px", "$extensions": { "iio": { "status": "proposed", "audit": "web section gap x2", "consolidates": ["110px (1)"] } } }
+    },
+    "control": {
+      "sm": { "$value": "32px", "$extensions": { "iio": { "status": "proposed", "note": "Icon button, small avatar" } } },
+      "md": { "$value": "40px", "$extensions": { "iio": { "status": "proposed", "note": "Button, search bar, icon button, avatar. Identical on web and mobile" } } },
+      "lg": { "$value": "48px", "$extensions": { "iio": { "status": "proposed", "note": "Block button, large search bar" } } }
+    }
+  },
+  "radius": {
+    "$type": "dimension",
+    "none":   { "$value": "0px",    "$extensions": { "iio": { "status": "proposed" } } },
+    "xs":     { "$value": "4px",    "$extensions": { "iio": { "status": "proposed", "audit": "mobile 11", "consolidates": ["6px (4)"] } } },
+    "sm":     { "$value": "8px",    "$extensions": { "iio": { "status": "proposed", "audit": "mobile 33, web 3" } } },
+    "md":     { "$value": "12px",   "$extensions": { "iio": { "status": "proposed", "audit": "mobile 19, web 3" } } },
+    "lg":     { "$value": "16px",   "$extensions": { "iio": { "status": "proposed", "audit": "mobile 18, web 1" } } },
+    "xl":     { "$value": "24px",   "$extensions": { "iio": { "status": "proposed", "audit": "mobile 7, web 3", "consolidates": ["20px (5): review"] } } },
+    "pill":   { "$value": "9999px", "$extensions": { "iio": { "status": "proposed", "audit": "buttons 32px, search bars 28/48/50/56px", "consolidates": ["28px (11)", "32px (8)", "48px", "50px (2)", "56px (1)"] } } },
+    "circle": { "$value": "50%",    "$extensions": { "iio": { "status": "proposed", "audit": "mobile 5, web 2" } } }
+  },
+  "duration": {
+    "$type": "duration",
+    "instant": { "$value": "100ms", "$extensions": { "iio": { "status": "proposed" } } },
+    "fast":    { "$value": "150ms", "$extensions": { "iio": { "status": "proposed", "audit": "mobile hover 0.15s x17", "consolidates": ["0.14s", "0.16s", "0.18s (mobile)"] } } },
+    "base":    { "$value": "200ms", "$extensions": { "iio": { "status": "proposed", "audit": "web hover .2s x8", "consolidates": ["0.22s", "0.25s"] } } },
+    "slow":    { "$value": "300ms", "$extensions": { "iio": { "status": "proposed", "consolidates": ["0.26s", "0.35s", "0.4s"] } } },
+    "slower":  { "$value": "500ms", "$extensions": { "iio": { "status": "proposed", "consolidates": ["0.5s", "0.8s (scroll reveal)"] } } }
+  },
+  "ease": {
+    "$type": "cubicBezier",
+    "standard":   { "$value": "cubic-bezier(0.2, 0.7, 0.2, 1)", "$extensions": { "iio": { "status": "proposed", "audit": "web x3 inline, unified with mobile cubic-bezier(0.2,0.8,0.2,1)" } } },
+    "emphasized": { "$value": "cubic-bezier(0.2, 0, 0, 1)",     "$extensions": { "iio": { "status": "proposed", "audit": "mobile --md-emphasized" } } },
+    "spring":     { "$value": "cubic-bezier(0.34, 1.36, 0.64, 1)", "$extensions": { "iio": { "status": "proposed", "audit": "mobile --md-spring" } } },
+    "pop":        { "$value": "cubic-bezier(0.3, 1.6, 0.5, 1)", "$extensions": { "iio": { "status": "proposed", "audit": "web star-rating pop" } } }
+  },
+  "z": {
+    "$type": "number",
+    "base":    { "$value": 0,  "$extensions": { "iio": { "status": "proposed" } } },
+    "raised":  { "$value": 1,  "$extensions": { "iio": { "status": "proposed" } } },
+    "sticky":  { "$value": 2,  "$extensions": { "iio": { "status": "proposed", "audit": "mobile topbar, statusbar" } } },
+    "nav":     { "$value": 20, "$extensions": { "iio": { "status": "proposed", "audit": "web topnav, mobile menu" } } },
+    "overlay": { "$value": 10, "$extensions": { "iio": { "status": "proposed", "audit": "mobile modal backdrop; review order against nav" } } }
+  },
+  "breakpoint": {
+    "$type": "dimension",
+    "phone":   { "$value": "760px",  "$extensions": { "iio": { "status": "proposed", "audit": "web" } } },
+    "tablet":  { "$value": "1024px", "$extensions": { "iio": { "status": "proposed", "audit": "web hamburger and mobile-app switch" } } },
+    "desktop": { "$value": "1100px", "$extensions": { "iio": { "status": "proposed", "audit": "web features grid" } } },
+    "wide":    { "$value": "1300px", "$extensions": { "iio": { "status": "proposed", "audit": "web h1 nowrap" } } }
+  }
+}

@@ -1,0 +1,401 @@
+{
+  "standard": "WCAG 2.2 AA",
+  "generated": "2026-09-30",
+  "exempt": [
+    "color.text.disabled"
+  ],
+  "results": [
+    {
+      "fg": "color.text.primary",
+      "bg": "color.surface.page",
+      "min": 4.5,
+      "kind": "Text",
+      "ratio": 18.88,
+      "status": "pass"
+    },
+    {
+      "fg": "color.text.primary",
+      "bg": "color.surface.card",
+      "min": 4.5,
+      "kind": "Text",
+      "ratio": 17.32,
+      "status": "pass"
+    },
+    {
+      "fg": "color.text.primary",
+      "bg": "color.surface.sunken",
+      "min": 4.5,
+      "kind": "Text",
+      "ratio": 16.72,
+      "status": "pass"
+    },
+    {
+      "fg": "color.text.primary",
+      "bg": "color.surface.hover",
+      "min": 4.5,
+      "kind": "Text",
+      "ratio": 17.78,
+      "status": "pass"
+    },
+    {
+      "fg": "color.text.primary",
+      "bg": "color.surface.brand-wash",
+      "min": 4.5,
+      "kind": "Text",
+      "ratio": 16.76,
+      "status": "pass"
+    },
+    {
+      "fg": "color.text.body",
+      "bg": "color.surface.page",
+      "min": 4.5,
+      "kind": "Text",
+      "ratio": 10.86,
+      "status": "pass"
+    },
+    {
+      "fg": "color.text.body",
+      "bg": "color.surface.card",
+      "min": 4.5,
+      "kind": "Text",
+      "ratio": 9.96,
+      "status": "pass"
+    },
+    {
+      "fg": "color.text.body",
+      "bg": "color.surface.sunken",
+      "min": 4.5,
+      "kind": "Text",
+      "ratio": 9.62,
+      "status": "pass"
+    },
+    {
+      "fg": "color.text.body",
+      "bg": "color.surface.hover",
+      "min": 4.5,
+      "kind": "Text",
+      "ratio": 10.23,
+      "status": "pass"
+    },
+    {
+      "fg": "color.text.body",
+      "bg": "color.surface.brand-wash",
+      "min": 4.5,
+      "kind": "Text",
+      "ratio": 9.64,
+      "status": "pass"
+    },
+    {
+      "fg": "color.text.secondary",
+      "bg": "color.surface.page",
+      "min": 4.5,
+      "kind": "Text",
+      "ratio": 6.69,
+      "status": "pass"
+    },
+    {
+      "fg": "color.text.secondary",
+      "bg": "color.surface.card",
+      "min": 4.5,
+      "kind": "Text",
+      "ratio": 6.13,
+      "status": "pass"
+    },
+    {
+      "fg": "color.text.secondary",
+      "bg": "color.surface.sunken",
+      "min": 4.5,
+      "kind": "Text",
+      "ratio": 5.92,
+      "status": "pass"
+    },
+    {
+      "fg": "color.text.secondary",
+      "bg": "color.surface.hover",
+      "min": 4.5,
+      "kind": "Text",
+      "ratio": 6.3,
+      "status": "pass"
+    },
+    {
+      "fg": "color.text.secondary",
+      "bg": "color.surface.brand-wash",
+      "min": 4.5,
+      "kind": "Text",
+      "ratio": 5.94,
+      "status": "pass"
+    },
+    {
+      "fg": "color.text.muted",
+      "bg": "color.surface.page",
+      "min": 4.5,
+      "kind": "Text",
+      "ratio": 5.33,
+      "status": "pass"
+    },
+    {
+      "fg": "color.text.muted",
+      "bg": "color.surface.card",
+      "min": 4.5,
+      "kind": "Text",
+      "ratio": 4.89,
+      "status": "pass"
+    },
+    {
+      "fg": "color.text.muted",
+      "bg": "color.surface.sunken",
+      "min": 4.5,
+      "kind": "Text",
+      "ratio": 4.72,
+      "status": "pass"
+    },
+    {
+      "fg": "color.text.muted",
+      "bg": "color.surface.hover",
+      "min": 4.5,
+      "kind": "Text",
+      "ratio": 5.02,
+      "status": "pass"
+    },
+    {
+      "fg": "color.text.muted",
+      "bg": "color.surface.brand-wash",
+      "min": 4.5,
+      "kind": "Text",
+      "ratio": 4.73,
+      "status": "pass"
+    },
+    {
+      "fg": "color.text.link",
+      "bg": "color.surface.page",
+      "min": 4.5,
+      "kind": "Text",
+      "ratio": 7.49,
+      "status": "pass"
+    },
+    {
+      "fg": "color.text.link",
+      "bg": "color.surface.card",
+      "min": 4.5,
+      "kind": "Text",
+      "ratio": 6.87,
+      "status": "pass"
+    },
+    {
+      "fg": "color.text.link",
+      "bg": "color.surface.sunken",
+      "min": 4.5,
+      "kind": "Text",
+      "ratio": 6.63,
+      "status": "pass"
+    },
+    {
+      "fg": "color.text.link",
+      "bg": "color.surface.hover",
+      "min": 4.5,
+      "kind": "Text",
+      "ratio": 7.05,
+      "status": "pass"
+    },
+    {
+      "fg": "color.text.link",
+      "bg": "color.surface.brand-wash",
+      "min": 4.5,
+      "kind": "Text",
+      "ratio": 6.65,
+      "status": "pass"
+    },
+    {
+      "fg": "color.text.brand",
+      "bg": "color.surface.page",
+      "min": 4.5,
+      "kind": "Text",
+      "ratio": 7.49,
+      "status": "pass"
+    },
+    {
+      "fg": "color.text.brand",
+      "bg": "color.surface.card",
+      "min": 4.5,
+      "kind": "Text",
+      "ratio": 6.87,
+      "status": "pass"
+    },
+    {
+      "fg": "color.text.brand",
+      "bg": "color.surface.sunken",
+      "min": 4.5,
+      "kind": "Text",
+      "ratio": 6.63,
+      "status": "pass"
+    },
+    {
+      "fg": "color.text.brand",
+      "bg": "color.surface.hover",
+      "min": 4.5,
+      "kind": "Text",
+      "ratio": 7.05,
+      "status": "pass"
+    },
+    {
+      "fg": "color.text.brand",
+      "bg": "color.surface.brand-wash",
+      "min": 4.5,
+      "kind": "Text",
+      "ratio": 6.65,
+      "status": "pass"
+    },
+    {
+      "fg": "color.text.danger",
+      "bg": "color.surface.page",
+      "min": 4.5,
+      "kind": "Text",
+      "ratio": 5.8,
+      "status": "pass"
+    },
+    {
+      "fg": "color.text.danger",
+      "bg": "color.surface.card",
+      "min": 4.5,
+      "kind": "Text",
+      "ratio": 5.32,
+      "status": "pass"
+    },
+    {
+      "fg": "color.text.danger",
+      "bg": "color.surface.sunken",
+      "min": 4.5,
+      "kind": "Text",
+      "ratio": 5.13,
+      "status": "pass"
+    },
+    {
+      "fg": "color.text.danger",
+      "bg": "color.surface.hover",
+      "min": 4.5,
+      "kind": "Text",
+      "ratio": 5.46,
+      "status": "pass"
+    },
+    {
+      "fg": "color.text.danger",
+      "bg": "color.surface.brand-wash",
+      "min": 4.5,
+      "kind": "Text",
+      "ratio": 5.15,
+      "status": "pass"
+    },
+    {
+      "fg": "color.text.danger-on-tint",
+      "bg": "color.surface.danger",
+      "min": 4.5,
+      "kind": "Text",
+      "ratio": 5.94,
+      "status": "pass"
+    },
+    {
+      "fg": "color.text.on-action",
+      "bg": "color.action.primary",
+      "min": 4.5,
+      "kind": "Text on fill",
+      "ratio": 3.98,
+      "status": "waived",
+      "reason": "Brand blue/600 is the brand colour for icons, borders and focus rings, where 3:1 is enough (3.98:1). It is not used behind text: text-bearing primary fills use color.action.primary-accessible (blue/650, 5.06:1), adopted in both products.",
+      "waiver": "accepted"
+    },
+    {
+      "fg": "color.text.on-action",
+      "bg": "color.action.primary-accessible",
+      "min": 4.5,
+      "kind": "Text on fill",
+      "ratio": 5.06,
+      "status": "pass"
+    },
+    {
+      "fg": "color.text.on-action",
+      "bg": "color.action.primary-hover",
+      "min": 4.5,
+      "kind": "Text on fill",
+      "ratio": 5.06,
+      "status": "pass"
+    },
+    {
+      "fg": "color.text.on-action",
+      "bg": "color.action.primary-pressed",
+      "min": 4.5,
+      "kind": "Text on fill",
+      "ratio": 7.49,
+      "status": "pass"
+    },
+    {
+      "fg": "color.text.on-action",
+      "bg": "color.action.danger",
+      "min": 4.5,
+      "kind": "Text on fill",
+      "ratio": 5.8,
+      "status": "pass"
+    },
+    {
+      "fg": "color.text.on-action",
+      "bg": "color.action.danger-hover",
+      "min": 4.5,
+      "kind": "Text on fill",
+      "ratio": 7.91,
+      "status": "pass"
+    },
+    {
+      "fg": "color.border.input",
+      "bg": "color.surface.page",
+      "min": 3,
+      "kind": "Control boundary",
+      "ratio": 4.23,
+      "status": "pass"
+    },
+    {
+      "fg": "color.border.focus",
+      "bg": "color.surface.page",
+      "min": 3,
+      "kind": "Control boundary",
+      "ratio": 3.98,
+      "status": "pass"
+    },
+    {
+      "fg": "color.border.default",
+      "bg": "color.surface.page",
+      "min": 3,
+      "kind": "Control boundary",
+      "ratio": 1.37,
+      "status": "waived",
+      "reason": "Decorative dividers and card edges. Not needed to identify a control. Controls use color.border.input.",
+      "waiver": "accepted"
+    },
+    {
+      "fg": "color.border.strong",
+      "bg": "color.surface.page",
+      "min": 3,
+      "kind": "Control boundary",
+      "ratio": 1.98,
+      "status": "waived",
+      "reason": "Secondary button outline. The button carries a text label, so the outline is not the only cue (WCAG 1.4.11).",
+      "waiver": "accepted"
+    },
+    {
+      "fg": "color.m3.outline",
+      "bg": "color.surface.page",
+      "min": 3,
+      "kind": "Control boundary",
+      "ratio": 4.55,
+      "status": "pass"
+    },
+    {
+      "fg": "color.m3.surface-container-high",
+      "bg": "color.surface.page",
+      "min": 3,
+      "kind": "Control boundary",
+      "ratio": 1.16,
+      "status": "waived",
+      "reason": "The app's search bars are Material 3 filled containers with no outline, in both layouts. The fill is 1.2:1 against white, so the field is identified by its search icon and placeholder text, not its boundary. This is the Material 3 pattern; an outlined variant would use color.border.input.",
+      "waiver": "accepted"
+    }
+  ]
+}

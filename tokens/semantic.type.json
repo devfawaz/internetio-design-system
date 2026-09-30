@@ -1,0 +1,65 @@
+{
+  "$description": "Text styles. Each style bundles size, line height, weight and tracking, so components pick one style instead of four loose values. The audit found 22 font sizes and 16 line heights on mobile, and 11 sizes and 8 line heights on the landing page; these 12 styles replace them. Line heights marked review change the rendered result slightly.",
+  "text": {
+    "caption": {
+      "size": { "$value": "{size.font.2xs}", "$type": "dimension" }, "line": { "$value": "12px", "$type": "dimension" },
+      "weight": { "$value": "{font.weight.medium}", "$type": "fontWeight" }, "tracking": { "$value": "0px", "$type": "dimension" },
+      "$description": "Beta badge, Product Hunt label"
+    },
+    "label": {
+      "size": { "$value": "{size.font.xs}", "$type": "dimension" }, "line": { "$value": "20px", "$type": "dimension" },
+      "weight": { "$value": "{font.weight.medium}", "$type": "fontWeight" }, "tracking": { "$value": "0px", "$type": "dimension" },
+      "$description": "Metadata, nav links, model ids, footer"
+    },
+    "body-sm": {
+      "size": { "$value": "{size.font.sm}", "$type": "dimension" }, "line": { "$value": "20px", "$type": "dimension" },
+      "weight": { "$value": "{font.weight.regular}", "$type": "fontWeight" }, "tracking": { "$value": "0px", "$type": "dimension" },
+      "$description": "Default in-app text (mobile body, results, inputs)"
+    },
+    "body": {
+      "size": { "$value": "{size.font.md}", "$type": "dimension" }, "line": { "$value": "24px", "$type": "dimension" },
+      "weight": { "$value": "{font.weight.regular}", "$type": "fontWeight" }, "tracking": { "$value": "0px", "$type": "dimension" },
+      "$description": "Marketing body copy, card text"
+    },
+    "label-strong": {
+      "size": { "$value": "{size.font.sm}", "$type": "dimension" }, "line": { "$value": "20px", "$type": "dimension" },
+      "weight": { "$value": "{font.weight.semibold}", "$type": "fontWeight" }, "tracking": { "$value": "0px", "$type": "dimension" },
+      "$description": "Buttons, result titles, model names"
+    },
+    "title-sm": {
+      "size": { "$value": "{size.font.md}", "$type": "dimension" }, "line": { "$value": "24px", "$type": "dimension" },
+      "weight": { "$value": "{font.weight.semibold}", "$type": "fontWeight" }, "tracking": { "$value": "0px", "$type": "dimension" },
+      "$description": "Card and answer titles"
+    },
+    "title": {
+      "size": { "$value": "{size.font.lg}", "$type": "dimension" }, "line": { "$value": "28px", "$type": "dimension" },
+      "weight": { "$value": "{font.weight.semibold}", "$type": "fontWeight" }, "tracking": { "$value": "0px", "$type": "dimension" },
+      "$description": "Section titles in the app"
+    },
+    "heading-sm": {
+      "size": { "$value": "{size.font.xl}", "$type": "dimension" }, "line": { "$value": "30px", "$type": "dimension" },
+      "weight": { "$value": "{font.weight.semibold}", "$type": "fontWeight" }, "tracking": { "$value": "-0.5px", "$type": "dimension" },
+      "$description": "Marketing card headings"
+    },
+    "heading": {
+      "size": { "$value": "{size.font.2xl}", "$type": "dimension" }, "line": { "$value": "32px", "$type": "dimension" },
+      "weight": { "$value": "{font.weight.semibold}", "$type": "fontWeight" }, "tracking": { "$value": "-0.5px", "$type": "dimension" },
+      "$description": "Hero supporting line, CTA supporting line"
+    },
+    "display-sm": {
+      "size": { "$value": "{size.font.3xl}", "$type": "dimension" }, "line": { "$value": "40px", "$type": "dimension" },
+      "weight": { "$value": "{font.weight.semibold}", "$type": "fontWeight" }, "tracking": { "$value": "-0.5px", "$type": "dimension" },
+      "$description": "Review: replaces the 36px phone hero"
+    },
+    "display": {
+      "size": { "$value": "{size.font.4xl}", "$type": "dimension" }, "line": { "$value": "48px", "$type": "dimension" },
+      "weight": { "$value": "{font.weight.semibold}", "$type": "fontWeight" }, "tracking": { "$value": "-0.5px", "$type": "dimension" },
+      "$description": "Review: web section titles were 40px on a 1.5 line height (60px), which is loose; 48px proposed"
+    },
+    "hero": {
+      "size": { "$value": "{size.font.6xl}", "$type": "dimension" }, "line": { "$value": "88px", "$type": "dimension" },
+      "weight": { "$value": "{font.weight.semibold}", "$type": "fontWeight" }, "tracking": { "$value": "-0.5px", "$type": "dimension" },
+      "$description": "Landing page headline; 56px (tablet) steps down via size.font.5xl"
+    }
+  }
+}
